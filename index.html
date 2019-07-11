@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+<link type="text/css" rel="stylesheet" href="style.css"/>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+<title>Time Machine</title>
+</head>
+<body>
+	<div class="d-flex justify-content-center main-wrapper">
+		<div class="entry-point d-flex align-items-center">
+			<button class="btn btn-lg btn-outline-primary" id="enter_code_btn">Zadat kód</button>
+		</div>
+
+		<div class="code-form-wrapper d-none">
+			<form>
+				<div class="form-group">
+					<label for="code1">
+						Kód 1:
+						<input type="text" name="code1" class="form-control code-input" value="12345">
+					</label>
+				</div>
+				<div class="form-group">
+					<label for="code2">
+						Kód 2:
+						<input type="text" name="code2" class="form-control code-input" value="12345">
+					</label>
+				</div>
+				<div class="form-group">
+					<label for="code3">
+						Kód 3:
+						<input type="text" name="code3" class="form-control code-input" value="12345">
+					</label>
+				</div>
+				<div class="form-group">
+					<label for="code4">
+						Kód 4:
+						<input type="text" name="code4" class="form-control code-input" value="12345">
+					</label>
+				</div>
+				<div class="form-group">
+					<label for="code5">
+						Kód 5:
+						<input type="text" name="code5" class="form-control code-input" value="12345">
+					</label>
+				</div>
+				<div class="form-group text-center">
+					<button type="reset" class="btn btn-secondary" id="start">Reset</button>
+					<button type="button" onclick="processCodes()" class="btn btn-primary" id="start">Start</button>
+				</div>
+			</form>
+		</div>
+		<div class="epoch-wrapper d-none align-items-center" id="epoch_wrapper">
+			<div class="message-wrapper flex-column text-center">
+				<p class="epoch-message"></p>
+				<button class="btn btn-outline-primary" id="back_to_form">Zpět</button>
+			</div>
+		</div>
+		<div class="loader-wrapper d-none justify-content-center flex-column text-center">
+			<img class="loader" src="./img/loader.svg" />
+			<p class="animated flash infinite slower h3">Načítám...</p>
+		</div>
+	</div>
+
+	<script src="./js/codes.js"></script>
+	<script src="./js/time-machine.js"></script>
+
+</body>
+</html>

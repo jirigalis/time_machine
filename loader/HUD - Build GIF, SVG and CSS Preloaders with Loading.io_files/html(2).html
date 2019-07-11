@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- saved from url=(0235)https://js.tappaysdk.com/tpdirect/v5/tappay-field/html?%7B%22origin%22%3A%22https%3A%2F%2Floading.io%22%2C%22type%22%3A%22ccv%22%2C%22placeholder%22%3A%22CVC%22%2C%22styles%22%3A%7B%22input%22%3A%7B%22font-size%22%3A%2218px%22%7D%7D%7D -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title></title>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: none;
+    background-color: transparent;
+}
+body, form, input, select {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+body.loading {
+    display: none;
+}
+label {
+    position: absolute;
+    left: -9999px;
+}
+input.autofill,
+input.focus-helper-next,
+input.focus-helper-prev {
+    width: 2px;
+    z-index: -1;
+    left: -2px;
+    opacity: 0;
+}
+:focus {
+    outline: 0;
+}
+</style>
+<style type="text/css">input{font-size:18px;}</style></head>
+<body class="">
+
+
+<form id="ccv-form">
+    <label for="cc-ccv">CCV</label>
+    <input class="focus-helper-prev">    
+    <input id="cc-ccv" class="ccv" type="tel" autocomplete="cc-csc" autocorrect="off" spellcheck="false" name="cc-ccv" aria-label="Credit or debit card CCV/CVV" aria-placeholder="CCV" aria-invalid="false" placeholder="CVC">    
+    <input tabindex="-1" type="submit" style="position: absolute; left: -9999px; width: 1px; height: 1px;">
+</form>
+<script src="./js(2)"></script>
+
+</body></html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- saved from url=(0278)https://js.tappaysdk.com/tpdirect/v5/tappay-field/html?%7B%22origin%22%3A%22https%3A%2F%2Floading.io%22%2C%22type%22%3A%22card-number%22%2C%22placeholder%22%3A%22Card%20Number%2C%20xxxx-xxxx-xxxx-xxxx%22%2C%22styles%22%3A%7B%22input%22%3A%7B%22font-size%22%3A%2218px%22%7D%7D%7D -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title></title>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: none;
+    background-color: transparent;
+}
+body, form, input, select {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+body.loading {
+    display: none;
+}
+label {
+    position: absolute;
+    left: -9999px;
+}
+input.autofill,
+input.focus-helper-next,
+input.focus-helper-prev {
+    width: 2px;
+    z-index: -1;
+    left: -2px;
+    opacity: 0;
+}
+:focus {
+    outline: 0;
+}
+</style>
+<style type="text/css">input{font-size:18px;}</style></head>
+<body class="">
+<form id="card-number-form">
+    <label for="card-number">Card Number</label>
+    <input type="tel" autocomplete="cc-number" autocorrect="off" autocapitalize="none" spellcheck="false" class="card-number" name="cc-number" id="cc-number" maxlength="22" placeholder="Card Number, xxxx-xxxx-xxxx-xxxx" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+    <input class="focus-helper-next">
+    <input tabindex="-1" id="cc-exp" class="autofill" type="tel" autocomplete="cc-exp" autocorrect="off" spellcheck="false" name="cc-exp" aria-label="Credit or debit card expiration date" aria-placeholder="MM / YY" aria-invalid="false">    
+    <input tabindex="-1" type="submit" style="position: absolute; left: -9999px; width: 1px; height: 1px;">
+</form>
+
+
+<script src="./js(2)"></script>
+
+</body></html>

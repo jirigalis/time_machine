@@ -1,0 +1,70 @@
+body {
+	background: linear-gradient(
+      rgba(0, 0, 0, 0.8), 
+      rgba(0, 0, 0, 0.8)
+    ), url("./background.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.main-wrapper {
+	height: 100vh;
+	color: #3ce481;
+	font-weight: 600;
+	text-shadow: 0 0 3px;
+}
+
+.boxed {
+	border: 2px solid #50f9f2;
+}
+
+/* Button override */
+.btn-outline-primary {
+	color: #ddd;
+	border: 2px solid #50f9f2;
+	border-radius: 0;
+}
+
+.btn-outline-primary:hover {
+	background-color: inherit;
+	border-color: inherit;
+}
+
+.code-input, .code-input:focus {
+	border: 2px solid #ddd;
+	color: #3ce481;
+	font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
+	border-radius: 0;
+	background: transparent;
+	font-size: 30px;
+}
+
+.loader {
+	width: 200px;
+}
+
+.delay-10s {
+	animation-delay: 10s;
+}
+
+.message-wrapper.error {
+	font-size: 40px;
+	color: red;
+	text-shadow: 0 0 3px red;
+}
+
+.message-wrapper.error button {
+	border-color: red;
+	color: red;
+	font-size: 28px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.message-wrapper.error button:hover {
+	box-shadow: 0 0 10px 0px red;
+}
+
+.epoch-name {
+	font-size: 30px;
+}
